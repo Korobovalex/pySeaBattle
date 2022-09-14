@@ -10,13 +10,13 @@ from .Dot import Dot
 class User(Player):
     def ask(self):
         while True:
-            coords = input('Ваш ход: ').split()
+            cords = input('Ваш ход: ').split()
 
             if len(cords) != 2:
                 print(' Введите 2 координаты! ')
                 continue
 
-            x, y = coords
+            x, y = cords
 
             if not (x.isdigit()) or not (y.isdigit()):
                 print(' Введите числа! ')
